@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivesup Tick Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            color: #333;
+        }
+
+        .header {
+            font-size: 2rem;
+            font-weight: bold;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid red;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: darkred;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Derivesup Tick Analyzer</div>
+        <form class="login-form" onsubmit="return validateLogin(event)">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <div class="error" id="error-message">Invalid username or password</div>
+        </form>
+    </div>
+
+    <script>
+        // List of valid users and passwords
+        const users = [
+            { username: 'hiroshanjayawardhana@gmail.com', password: 'AQM628$@' },
+            { username: 'danushka75007500@gmail.com', password: 'ZQ802$@1' },
+            { username: 'neville.kariya1984@gmail.com', password: 'DRY843!@' },
+            { username: 'eprashantha93@gmail.com', password: 'AL671@$7' },
+            { username: 'rsandamal0@gmail.com', password: 'AL671@$7' },
+            { username: 'kavindapeiris1996@gmail.com', password: 'Ad67B67@' },
+            { username: 'roshanchanaka880@gmail.com', password: 'GF546@$qHj' },
+            { username: 'yellowmalee@gmail.com', password: 'GF546@$qHj' },
+            { username: 'lochanars@gmail.com', password: 'Ad635@Hg' },
+            { username: 'mahindaliyanage44@gmail.com', password: 'FA87023@#ap' },
+            { username: 'geantslook@gmail.com', password: 'Ad635@Hg' },
+            { username: 'sharshana1990@gmail.com', password: 'FA87023@#ap' },
+            { username: 'chamaramadushan172@gmail.com', password: 'GF546@$qHj' },
+            { username: 'bkamalsiri@gmail.com', password: 'GF546@$qHj' },
+            { username: 'sajithmanawadu93@gmail.com', password: 'LGF4673@d' },
+            { username: 'nayanatharanga121@gmail.com', password: 'LGF4673@d' },
+            { username: 'pasidumadushan1998@icloud.com', password: 'GYD547@e' },
+            { username: 'Udarab71@gmail.com', password: 'LGF4673@d' },
+            { username: 'ranishkaprasath3@gmail.com', password: 'D@&AJ754' }
+        ];
+
+        function validateLogin(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // Check if the entered username and password match any in the list
+            const validUser = users.find(user => user.username === username && user.password === password);
+
+            if (validUser) {
+                window.location.href = 'https://derivesuptickanalyzer00.github.io/money-mangement-plane/'; // Replace with your desired URL
+            } else {
+                errorMessage.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
