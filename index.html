@@ -1,185 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Untitled</title>
-  
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Untitled</title>
-  
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Derivesup Tick Analyzer</title>
+    <title>Maintenance Mode</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: white;
-            color: #333;
+            height: 100vh;
+            background: linear-gradient(to bottom, #f9a8d4, #f0e68c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: white;
+            text-align: center;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            width: 100%;
             color: #333;
         }
 
-        .header {
-            font-size: 2rem;
-            font-weight: bold;
-            color: red;
+        h1 {
+            font-size: 40px;
+            color: #ff6f61;
             margin-bottom: 20px;
         }
 
-        .login-form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 1px solid red;
-            border-radius: 10px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #555;
         }
 
-        .login-form input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .message {
+            font-size: 18px;
+            color: #666;
+            margin-top: 20px;
         }
 
-        .login-form button {
-            width: 100%;
-            padding: 10px;
-            background-color: red;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-
-        .login-form button:hover {
-            background-color: darkred;
-        }
-
-        .error {
-            color: red;
-            margin-top: 10px;
-            display: none;
+        .icon {
+            font-size: 50px;
+            color: #ff6f61;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">Derivesup Tick Analyzer</div>
-        <form class="login-form" onsubmit="return validateLogin(event)">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-            <div class="error" id="error-message">Invalid username or password</div>
-        </form>
+        <div class="icon">🛠️</div>
+        <h1>We Are Currently Under Maintenance</h1>
+        <p>Our website is temporarily unavailable as we perform essential updates. We apologize for any inconvenience.</p>
+        <div class="message">
+            <p>We'll be back shortly! Thank you for your understanding.</p>
+        </div>
     </div>
-
-    <script>
-        // List of valid users and passwords
-        const users = [
-            { username: '1014pradeep@gmail.com', password: 'AH75$BKa' },
-            { username: 'v.a.p.kit.show@gmail.com', password: 'AH75$BKa' },
-            { username: 'nadeesha12pigera@gmail.com', password: 'AH75$BKa' },
-            { username: 'Haseefmashfaq@gmail.com', password: 'AH75$BKa' },
-            { username: 'miprabash4@gmail.com', password: 'LH5399&@' },
-            { username: 'tharusha.sandeepta@gmail.com', password: 'LH5399&@' },
-            { username: 'asiridushmantha89@gmail.com', password: 'LH5399&@' },
-            { username: 'charithrullz993@gmail.com', password: 'LH5399&@' },
-            { username: 'Dinesh.marvelestates@gmail.com', password: 'LH5399&@' },
-            { username: 'prabahaniherath@gmail.com', password: 'LH5399&@' },
-            { username: 'dilshan.fdo12@gmail.com', password: 'LH5399&@' },
-            { username: 'bryanperera2003@gmail.com', password: 'LH5399&@' },
-            { username: 'prabathpasindu291@gmail.com', password: 'GF546@$qHj' },
-            { username: 'ravishanaka1991@gmail.com', password: 'GF546@$qHj' },
-            { username: 'nipun.codeartix@gmail.com', password: 'GF546@$qHj' },
-            { username: 'ravindu.ediriweera@gmail.com', password: 'GF546@$qHj' },
-            { username: 'Sithararanasinha2nd@gmail.com', password: 'GF546@$qHj' },
-            { username: 'chamaramadushan172@gmail.com', password: 'GF546@$qHj' },
-            { username: 'ishararuchiranga.aht@gmail.com', password: 'LH5399&@' },
-            { username: 'mvnmadushan@gmail.com', password: 'LH5399&@' },
-            { username: 'hsamankumara295@gmail.com', password: 'LH5399&@' },
-            { username: 'lakmalkmuk@gmail.com', password: 'FG622H@$' },
-            { username: 'hsamankumara295@gmail.com', password: 'FG622H@$' },
-            { username: 'tharukarodrigo0@gmail.com', password: 'FG622H@$' },
-            { username: 'Kuma', password: '1234' },
-            { username: 'scorpio.stingz@gmail.com', password: 'AH75$BKa' },
-            { username: 'aashikazmil405@gmail.com', password: 'AH75$BKa' },
-            { username: 'Lasidealwis@gmail.com', password: 'AH75$BKa' },
-            { username: 'ashantrd920@gmail.com', password: 'ADR67#@1' },
-            { username: 'shenalwijesinghe1992@gmail.com', password: 'LH5399&@' },
-            { username: 'hiroshanjayawardhana@gmail.com', password: 'AQM628$@' },
-            { username: 'danushka75007500@gmail.com', password: 'ZQ802$@1' },
-            { username: 'neville.kariya1984@gmail.com', password: 'DRY843!@' },
-            { username: 'eprashantha93@gmail.com', password: 'AL671@$7' },
-            { username: 'rsandamal0@gmail.com', password: 'AL671@$7' },
-            { username: 'kavindapeiris1996@gmail.com', password: 'Ad67B67@' },
-            { username: 'roshanchanaka880@gmail.com', password: 'GF546@$qHj' },
-            { username: 'yellowmalee@gmail.com', password: 'GF546@$qHj' },
-            { username: 'lochanars@gmail.com', password: 'Ad635@Hg' },
-            { username: 'mahindaliyanage44@gmail.com', password: 'FA87023@#ap' },
-            { username: 'geantslook@gmail.com', password: 'Ad635@Hg' },
-            { username: 'sharshana1990@gmail.com', password: 'FA87023@#ap' },
-            { username: 'Nuwa', password: '1234' },
-            { username: 'bkamalsiri@gmail.com', password: 'GF546@$qHj' },
-            { username: 'sajithmanawadu93@gmail.com', password: 'LGF4673@d' },
-            { username: 'nayanatharanga121@gmail.com', password: 'LGF4673@d' },
-            { username: 'pasidumadushan1998@icloud.com', password: 'GYD547@e' },
-            { username: 'Udarab71@gmail.com', password: 'LGF4673@d' },
-            { username: 'ranishkaprasath3@gmail.com', password: 'D@&AJ754' }
-        ];
-
-        function validateLogin(event) {
-            event.preventDefault();
-
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const errorMessage = document.getElementById('error-message');
-
-            // Check if the entered username and password match any in the list
-            const validUser = users.find(user => user.username === username && user.password === password);
-
-            if (validUser) {
-                window.location.href = 'https://analyzermoneymanagementcalculator.site/'; // Replace with your desired URL
-            } else {
-                errorMessage.style.display = 'block';
-            }
-        }
-    </script>
-</body>
-</html>
-<!-- partial -->
-  
-</body>
-</html>
-<!-- partial -->
-  
 </body>
 </html>
